@@ -13,7 +13,6 @@ export default defineConfig(({ command }) => {
     root: '.',
     build: {
       sourcemap: true,
-      outDir: 'dist',
       rollupOptions: {
         input: glob.sync('./src/*.html'),
         output: {
