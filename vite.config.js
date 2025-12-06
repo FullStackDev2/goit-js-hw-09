@@ -10,10 +10,10 @@ export default defineConfig(({ command }) => {
       [command === 'serve' ? 'global' : '_global']: {},
     },
     base: '/goit-js-hw-09/',
-    "build": "vite build --base=/goit-js-hw-09/",
     root: '.',
     build: {
       sourcemap: true,
+      outDir: 'dist',
       rollupOptions: {
         input: glob.sync('./src/*.html'),
         output: {
