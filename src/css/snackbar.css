@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    background: #fff;
+    padding: 24px 28px;
+    border-radius: 12px;
+    min-width: 500px;
+}
+
+/* Delay */
+.form>label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input[type="number"] {
+    padding: 8px;
+    font-size: 14px;
+}
+
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 12px 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    min-width: 0;
+}
+
+
+legend {
+    padding: 0;
+    margin-right: 8px;
+    font-weight: 500;
+}
+
+
+fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+fieldset input[type="radio"] {
+    margin: 0;
+}
+
+button {
+    grid-column: span 2;
+    padding: 10px;
+    font-size: 15px;
+}
